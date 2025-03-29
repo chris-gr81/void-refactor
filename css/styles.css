@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: black;
-  color: white;
-  margin-top: 3rem;
+  background-color: #0a0a0a;
+  margin-top: 2rem;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar {
@@ -14,12 +18,60 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   z-index: 1000;
-  height: 3rem;
+  height: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1f1f1f;
+  font-size: 1.2rem;
+}
+.navbar__logo, .navbar__link {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  color: #00bfff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #00ffff;
+  height: 2rem;
+}
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+.navbar__link--active {
+  background-color: #141414;
+  color: #8fdfff;
+  border-left: 1px solid #1f1f1f;
+  border-right: 1px solid #1f1f1f;
+  text-shadow: 0 0 25px #8fdfff;
+}
+
+.hero {
+  display: flex;
+  height: calc(100vh - 2rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle, rgba(0, 191, 255, 0.15) 0%, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.85) 35%, rgba(0, 0, 0, 0.95) 100%), url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__word {
+  color: rgb(0, 133.7, 178.5);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 3.5rem;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 5px rgba(80, 150, 180, 0.3), 0 0 10px rgba(40, 100, 120, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=styles.css.map */
