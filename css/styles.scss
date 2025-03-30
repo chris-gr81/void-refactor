@@ -80,13 +80,69 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
-  &__word {
+  &__title {
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
     color: darken($primaryColor, 15%);
     text-transform: uppercase;
-    letter-spacing: 1rem;
-    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    width: calc(100vw - 1rem);
+    justify-content: center;
     font-family: "Orbitron", sans-serif;
     text-shadow: 0 0 5px rgba(80, 150, 180, 0.3),
       0 0 10px rgba(40, 100, 120, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    &--head {
+      font-size: 3.5rem;
+      letter-spacing: 2rem;
+      padding-left: 2rem;
+      width: fit-content;
+      color: $accentColor;
+      text-shadow: 0 0 10px $primaryColor;
+    }
+
+    &--main {
+      background-color: transparentize($elementBgColor, 0.3);
+      border-top: 1px solid $primaryColor;
+      border-bottom: 1px solid $primaryColor;
+      font-size: 2rem;
+      padding-left: 1rem;
+    }
+
+    &--sub {
+      font-size: 1rem;
+      letter-spacing: 1rem;
+      padding-left: 1rem;
+      width: fit-content;
+      color: $accentColor;
+      text-shadow: 0 0 10px $accentColor;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    &__title {
+      letter-spacing: 1rem;
+      &--head {
+        font-size: 6rem;
+        padding-left: 4rem;
+        letter-spacing: 4rem;
+      }
+      &--main {
+        font-size: 2.5rem;
+      }
+
+      &--sub {
+        font-size: 2rem;
+        letter-spacing: 2rem;
+        padding-left: 2rem;
+      }
+    }
   }
 }
