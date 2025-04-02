@@ -172,6 +172,9 @@ body {
     top: auto;
     right: auto;
     background-color: transparent;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
   }
   .navbar__hamburger {
     display: none;

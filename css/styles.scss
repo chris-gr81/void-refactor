@@ -208,6 +208,9 @@ body {
       top: auto;
       right: auto;
       background-color: transparent;
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
     }
     &__hamburger {
       display: none;
