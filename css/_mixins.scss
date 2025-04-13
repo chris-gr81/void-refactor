@@ -1,0 +1,13 @@
+@mixin header($size) {
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.5rem;
+  border-top: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+  font-size: $size;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(80, 150, 180, 0.3), 0 0 10px rgba(40, 100, 120, 0.2),
+    2px 2px 4px rgba(0, 0, 0, 0.7);
+  background-color: #141414b3;
+}
